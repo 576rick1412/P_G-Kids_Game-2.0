@@ -6,6 +6,57 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ProtoScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Title_Scene.unity
+    guid: 39f6082628b51994ca7269835d10c75e
+  - enabled: 1
+    path: Assets/Scenes/Main_Scene.unity
+    guid: 11927103b2703284b858209b27533e75
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/1_\uD37C\uC990\uAC8C\uC784/PuzzleGame_Hub.unity"
+    guid: 691f7e625ede1cf43898d5aee6640e44
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/2_\uC0AC\uACFC\uAC8C\uC784/AppleGame_Hub.unity"
+    guid: a78ad47703e25894aae207e52339a7f3
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/3_\uC54C\uC57D\uAC8C\uC784/MedicGame_Hub.unity"
+    guid: a170b68ec24b94e4ea875464abc52600
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/4_\uB3D9\uBB3C\uAC8C\uC784/AnimalGame_Hub.unity"
+    guid: a419dd2347d4d004da71e3f20a7e3a8d
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/1_\uD37C\uC990\uAC8C\uC784/PuzzleGame_1.unity"
+    guid: 02e8eaf8e90e08c40bb31c973f4e6f39
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/1_\uD37C\uC990\uAC8C\uC784/PuzzleGame_2.unity"
+    guid: 48fb8cef5134ff744b7defd4028d6994
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/1_\uD37C\uC990\uAC8C\uC784/PuzzleGame_3.unity"
+    guid: 4158213715fa9f442a3b80aa911f83e9
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/2_\uC0AC\uACFC\uAC8C\uC784/AppleGame_1.unity"
+    guid: ef100999c4012604cb066dc7f223bfcd
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/2_\uC0AC\uACFC\uAC8C\uC784/AppleGame_2.unity"
+    guid: d3e358baa1b91b44389d7495d4e38c72
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/2_\uC0AC\uACFC\uAC8C\uC784/AppleGame_3.unity"
+    guid: 5a4213a289baccf498b723a8f100c446
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/3_\uC54C\uC57D\uAC8C\uC784/MedicGame_1.unity"
+    guid: 8798e7fce22889b4e8f743524c644338
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/3_\uC54C\uC57D\uAC8C\uC784/MedicGame_2.unity"
+    guid: 06bfb0e878ae9a84ab917b84409d4b9f
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/3_\uC54C\uC57D\uAC8C\uC784/MedicGame_3.unity"
+    guid: 1df279b084f843e4a9879fc29e4b9582
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/4_\uB3D9\uBB3C\uAC8C\uC784/AnimalGame_1.unity"
+    guid: 486608417b3ca8543ac4261731084917
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/4_\uB3D9\uBB3C\uAC8C\uC784/AnimalGame_2.unity"
+    guid: d6d52e1da1d5abb4d824e524da614339
+  - enabled: 1
+    path: "Assets/Scenes/\uBBF8\uB2C8\uAC8C\uC784/4_\uB3D9\uBB3C\uAC8C\uC784/AnimalGame_3.unity"
+    guid: da82b3c23ab57714982c3e85417764df
   m_configObjects: {}

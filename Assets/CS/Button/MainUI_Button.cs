@@ -37,7 +37,7 @@ public class MainUI_Button : MonoBehaviour
     {
         SceneManager.LoadScene("Title_Scene");
     }
-    public void proto_b()
+    public void Setting()
     {
         Debug.Log("세팅 눌림");
     }
