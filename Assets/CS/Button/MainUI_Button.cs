@@ -31,7 +31,7 @@ public class MainUI_Button : MonoBehaviour
 
     public void Main_Scene()
     {
-        SceneManager.LoadScene("Title_Scene");
+        SceneManager.LoadScene("Main_Scene");
     }
     public void goHome()
     {
