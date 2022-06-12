@@ -9,7 +9,7 @@ public class Medical_Manager : MonoBehaviour
     public int Medical_Num = 0; //성공한 알약수
 
     public GameObject[] Medical;
-    public GameObject[] Medical_Black;
+    public GameObject[] Medical_positon;
 
     public GameObject[] setMedical;
 
@@ -101,7 +101,7 @@ public class Medical_Manager : MonoBehaviour
         for (int j = 0; j < 5; j++)
         {
             // 알약(Medical)과 약접시좌표(Medical_Black)의 거리가 Null_Num보다 작다면 true 멀다면 false
-            float Distance0 = Vector3.Distance(Medical[i].transform.position, Medical_Black[j].transform.position);
+            float Distance0 = Vector3.Distance(Medical[i].transform.position, Medical_positon[j].transform.position);
             if (Distance0 < Null_Num)
             { Destroy(Medical[i]); Medical_Num++; return; } 
         }
