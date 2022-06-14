@@ -12,7 +12,7 @@ public class Animal_Manager : MonoBehaviour
     [Header("단어 순서")]
     public int[] OBJ_order; // 오브젝트 순서
     public bool[] cheak; // 드롭 확인용
-
+    
     public GameObject[] GameObject; //글자박스
     public GameObject[] target; // 빈칸
     Vector2[] target_POS = new Vector2[5];
@@ -112,11 +112,8 @@ public class Animal_Manager : MonoBehaviour
         if (Distance < Null_Num)
         {
             GameObject[i].transform.position = target[OBJ_order[i]].transform.position;
-            cheak[i] = true;
+            cheak[i] = true;    return;
         }
-        else
-        {
-            GameObject[i].transform.position = target_POS[i];
-        }
+        GameObject[i].transform.position = target_POS[i];
     }
 }
