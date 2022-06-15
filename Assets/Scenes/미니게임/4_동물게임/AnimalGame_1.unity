@@ -1036,6 +1036,7 @@ MonoBehaviour:
   OBJ_order: 0100000000000000
   cheak: 0000
   Null_cheak: 0000
+  Null_cheak_Num: 6400000064000000
   GameObject:
   - {fileID: 2140339658776354691}
   - {fileID: 2140339659115764827}
