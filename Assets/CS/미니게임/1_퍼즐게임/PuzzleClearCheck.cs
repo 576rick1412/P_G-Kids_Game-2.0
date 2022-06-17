@@ -24,6 +24,7 @@ public class PuzzleClearCheck : MonoBehaviour
         {
             clearART.SetActive(true);
             Debug.Log("Å¬¸®¾î");
+            this.gameObject.SetActive(false);
         }
     }
 }

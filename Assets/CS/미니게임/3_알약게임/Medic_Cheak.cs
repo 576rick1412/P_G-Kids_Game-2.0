@@ -18,6 +18,7 @@ public class Medic_Cheak : MonoBehaviour
            check3.Medical_Num >= claer_Num)
         {
             Debug.Log("Å¬¸®¾î");
+            this.gameObject.SetActive(false);
         }
     }
 }

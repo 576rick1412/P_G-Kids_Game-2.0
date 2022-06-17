@@ -26,7 +26,7 @@ public class Animal_Manager : MonoBehaviour
         for (int i = 0; i < cheak.Length; i++)  { cheak[i] = false; }
     }
 
-    void Update()
+    public void clear()
     {
         switch (cheak.Length)
         {
@@ -101,13 +101,13 @@ public class Animal_Manager : MonoBehaviour
             float Distance = Vector3.Distance(GameObject[i].transform.position, target[OBJ_order[j]].transform.position);
             if (Distance < Null_Num)
             {
-                if (Null_cheak[j] == true) { GameObject[i].transform.position = target_POS[i]; return 100; }
+                if (Null_cheak[j] == true) { GameObject[i].transform.position = target_POS[i]; return 100; } //빈칸에 오브젝트가 있다면 리턴
                 else
                 {
-                    if (i == j)
-                    { GameObject[i].transform.position = target[OBJ_order[i]].transform.position;   cheak[i] = true;    Null_cheak[j] = true;   return j; }
-                    else
-                    { GameObject[i].transform.position = target[OBJ_order[j]].transform.position;                       Null_cheak[j] = true;   return j; }
+                    if (i == j) // 올바른 칸일 경우 
+                    { GameObject[i].transform.position = target[OBJ_order[i]].transform.position;   cheak[i] = true;    Null_cheak[j] = true; clear(); return j; }
+                    else //칸은 맞으나 올바른 칸이 아닐경우
+                    { GameObject[i].transform.position = target[OBJ_order[j]].transform.position;                       Null_cheak[j] = true;          return j; }
                 }
             }
         }GameObject[i].transform.position = target_POS[i]; return 100;

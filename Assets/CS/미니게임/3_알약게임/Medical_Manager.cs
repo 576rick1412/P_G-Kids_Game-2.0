@@ -17,7 +17,7 @@ public class Medical_Manager : MonoBehaviour
 
     void Start()
     {
-        Null_Num = Screen.height / 12f;
+        Null_Num = Screen.height / 10f;
 
         for (int i = 0; i < Medical.Length; i++)
         {
