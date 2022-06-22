@@ -373,7 +373,6 @@ GameObject:
   - component: {fileID: 342744240}
   - component: {fileID: 342744239}
   - component: {fileID: 342744238}
-  - component: {fileID: 342744241}
   m_Layer: 5
   m_Name: "1\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -445,9 +444,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342744241}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 473001692}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -495,26 +494,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342744236}
   m_CullTransparentMesh: 1
---- !u!114 &342744241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342744236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 1
-  Puzzle:
-  - {fileID: 21300000, guid: 48354e05551d0054f938221b4a815b76, type: 3}
-  - {fileID: 21300000, guid: 0435a9b3273c1ca49ac0a90f4db256c3, type: 3}
-  - {fileID: 21300000, guid: a371deee7103f204584077682eb9949f, type: 3}
-  - {fileID: 21300000, guid: 57f10789730771e45bd5d154d72b8162, type: 3}
-  Image: {fileID: 342744239}
-  cheak_Clear: 0
 --- !u!1 &406099343
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,15 +812,16 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ab9e0df59b7eeb149b1588863dc3c24f, type: 3}
     - {fileID: 21300000, guid: 8a299908217a6db4aa7629b87986ec5f, type: 3}
     - {fileID: 21300000, guid: 45c5cbd110ab55c46a5932a045bdc1f4, type: 3}
-  PS:
-    Puzzle:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  Puzzle_Num: 
-  Image: {fileID: 0}
-  cheak_Clear: 
+  Puzzle_Num: 01000000020000000300000000000000
+  Image:
+  - {fileID: 342744239}
+  - {fileID: 735928253}
+  - {fileID: 1076915171}
+  - {fileID: 1566919282}
+  cheak_Clear: 00000000
+  clear: {fileID: 13543932}
+  clearART: {fileID: 406099343}
+  Clear_time: 2
 --- !u!1 &665797180
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +831,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665797181}
-  - component: {fileID: 665797182}
   m_Layer: 5
   m_Name: "\uD074\uB9AC\uC5B4 \uD310\uC815"
   m_TagString: Untagged
@@ -879,20 +858,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &665797182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665797180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d9ec7b321c1704c83ae77cff33804f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clear: {fileID: 13543932}
-  clearART: {fileID: 406099343}
 --- !u!1 &735928250
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +870,6 @@ GameObject:
   - component: {fileID: 735928254}
   - component: {fileID: 735928253}
   - component: {fileID: 735928252}
-  - component: {fileID: 735928255}
   m_Layer: 5
   m_Name: "2\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -977,9 +941,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 735928255}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 473001692}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1027,26 +991,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735928250}
   m_CullTransparentMesh: 1
---- !u!114 &735928255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 735928250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 2
-  Puzzle:
-  - {fileID: 21300000, guid: d41070cbb48360948ad0e78a43d491bc, type: 3}
-  - {fileID: 21300000, guid: 295c7d68b56960648a82f25aca5bb82f, type: 3}
-  - {fileID: 21300000, guid: d1e95d9e423bc0349afd7b53ead0ad12, type: 3}
-  - {fileID: 21300000, guid: 0c021d69eb806b540ac8a17d8a802b17, type: 3}
-  Image: {fileID: 735928253}
-  cheak_Clear: 0
 --- !u!1 &1076915168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,7 +1003,6 @@ GameObject:
   - component: {fileID: 1076915172}
   - component: {fileID: 1076915171}
   - component: {fileID: 1076915170}
-  - component: {fileID: 1076915173}
   m_Layer: 5
   m_Name: "3\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -1131,9 +1074,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1076915173}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 473001692}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1181,26 +1124,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076915168}
   m_CullTransparentMesh: 1
---- !u!114 &1076915173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076915168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 3
-  Puzzle:
-  - {fileID: 21300000, guid: bd45d74fb1e753d4096f785dda0824b8, type: 3}
-  - {fileID: 21300000, guid: e95a558cff7b5584298f07f30612b907, type: 3}
-  - {fileID: 21300000, guid: a74cdcc2771278b4b97a759cdc3c8709, type: 3}
-  - {fileID: 21300000, guid: 8d9a06892ca31a54693b3b86235f9403, type: 3}
-  Image: {fileID: 1076915171}
-  cheak_Clear: 0
 --- !u!1 &1491290882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1220,6 @@ GameObject:
   - component: {fileID: 1566919283}
   - component: {fileID: 1566919282}
   - component: {fileID: 1566919281}
-  - component: {fileID: 1566919284}
   m_Layer: 5
   m_Name: "4\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -1369,9 +1291,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1566919284}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 473001692}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1419,26 +1341,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566919279}
   m_CullTransparentMesh: 1
---- !u!114 &1566919284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566919279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 0
-  Puzzle:
-  - {fileID: 21300000, guid: 7c08b478f2c850b468b647226e0fb460, type: 3}
-  - {fileID: 21300000, guid: ab9e0df59b7eeb149b1588863dc3c24f, type: 3}
-  - {fileID: 21300000, guid: 8a299908217a6db4aa7629b87986ec5f, type: 3}
-  - {fileID: 21300000, guid: 45c5cbd110ab55c46a5932a045bdc1f4, type: 3}
-  Image: {fileID: 1566919282}
-  cheak_Clear: 0
 --- !u!1 &1807203952
 GameObject:
   m_ObjectHideFlags: 0
