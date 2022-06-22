@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Clear_IMG : MonoBehaviour
 {
+    public int clear;
     public GameObject[] clear_IMG;
     void Start()
     {
@@ -11,7 +12,7 @@ public class Clear_IMG : MonoBehaviour
         {
             clear_IMG[i].SetActive(false);
         }
-        int clear = Random.Range(0, clear_IMG.Length);
+        clear = Random.Range(0, 3);
         clear_IMG[clear].SetActive(true);
     }
 }
