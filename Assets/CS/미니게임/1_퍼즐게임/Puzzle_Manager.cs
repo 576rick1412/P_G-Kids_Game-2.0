@@ -5,14 +5,14 @@ using UnityEngine.UI;
 public class Puzzle_Manager : MonoBehaviour
 {
     public int a; //퍼즐의 현재 이미지 상태 0이 정방향 상태
-    public Sprite[] Puzzle; // 퍼즐 스프라이트
+    public Sprite[] Puzzle;
 
     public Image Image; // 퍼즐 십자선
     public bool cheak_Clear = false;
 
     void Start()
     {
-        Image.sprite = Puzzle[a]; // 시작시 돌아가있는 퍼즐을 위한 한 줄
+        Image.sprite = Puzzle[a];
         if (a == 0) cheak_Clear = true;
     }
 

@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class PuzzleClearCheck : MonoBehaviour
 {
-    public int max_int = 0;
-    public int clear;
+    public GameObject clear;
     public GameObject clearART;
-    public GameObject[] clear_IMG;
     void Start()
     {
         clearART.SetActive(false);
-        for(int i = 0;i<clear_IMG.Length;i++)
-        {
-            clear_IMG[i].SetActive(false);
-        }
+        clear.SetActive(false);
     }
 
     void Update()
@@ -30,11 +25,8 @@ public class PuzzleClearCheck : MonoBehaviour
            check4.cheak_Clear == true)
         {
             clearART.SetActive(true);
+            clear.SetActive(true);
             Debug.Log("Å¬¸®¾î");
-            int clear = Random.Range(0, max_int);
-
-            clear_IMG[clear].SetActive(true);
-
         }
     }
 }
