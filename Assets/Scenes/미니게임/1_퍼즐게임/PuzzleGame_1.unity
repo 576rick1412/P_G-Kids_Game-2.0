@@ -821,7 +821,7 @@ MonoBehaviour:
   cheak_Clear: 00000000
   clear: {fileID: 13543932}
   clearART: {fileID: 406099343}
-  Clear_time: 2
+  Clear_time: 1
 --- !u!1 &665797180
 GameObject:
   m_ObjectHideFlags: 0

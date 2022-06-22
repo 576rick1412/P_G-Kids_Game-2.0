@@ -423,6 +423,108 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &633072916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3073737508693162130, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_Name
+      value: Clear_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3073737508693162142, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+--- !u!1 &633072917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3073737510526279338, guid: f7c4ce1d400e87d4786fb3f817ec2471, type: 3}
+  m_PrefabInstance: {fileID: 633072916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &703012724
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +714,6 @@ GameObject:
   - component: {fileID: 916977248}
   - component: {fileID: 916977247}
   - component: {fileID: 916977246}
-  - component: {fileID: 916977245}
   m_Layer: 5
   m_Name: "3\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -640,26 +741,6 @@ RectTransform:
   m_AnchoredPosition: {x: -250, y: -250}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &916977245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916977243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 3
-  Puzzle:
-  - {fileID: 21300000, guid: 3474fa172e2a71b47a296bdfc6a199db, type: 3}
-  - {fileID: 21300000, guid: ccb5d38bb1f1500489b58f30565aef51, type: 3}
-  - {fileID: 21300000, guid: e95b34c2944b9ae4aa78f9b138e0eeac, type: 3}
-  - {fileID: 21300000, guid: cfd2553ca0361d0489b69676f1c460c4, type: 3}
-  Image: {fileID: 916977247}
-  cheak_Clear: 0
 --- !u!114 &916977246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,9 +785,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 916977245}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 1613580762}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -766,7 +847,6 @@ GameObject:
   - component: {fileID: 1011776500}
   - component: {fileID: 1011776499}
   - component: {fileID: 1011776498}
-  - component: {fileID: 1011776497}
   m_Layer: 5
   m_Name: "4\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -794,26 +874,6 @@ RectTransform:
   m_AnchoredPosition: {x: 250, y: -250}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1011776497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011776495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 0
-  Puzzle:
-  - {fileID: 21300000, guid: ab727ceecb3b2484fa83c818265136be, type: 3}
-  - {fileID: 21300000, guid: 06073720db230db4db8327c6747ad6b3, type: 3}
-  - {fileID: 21300000, guid: d3e65e60b1a4dec4c854d6dc423a0660, type: 3}
-  - {fileID: 21300000, guid: a386c474d7d5ffe4fbecc6d50d189bb3, type: 3}
-  Image: {fileID: 1011776499}
-  cheak_Clear: 0
 --- !u!114 &1011776498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,9 +918,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011776497}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 1613580762}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -920,7 +980,6 @@ GameObject:
   - component: {fileID: 1174404039}
   - component: {fileID: 1174404038}
   - component: {fileID: 1174404037}
-  - component: {fileID: 1174404036}
   m_Layer: 5
   m_Name: "1\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -948,26 +1007,6 @@ RectTransform:
   m_AnchoredPosition: {x: -250, y: 250}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1174404036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174404034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 1
-  Puzzle:
-  - {fileID: 21300000, guid: f25c69afc05ce3c419e7e11fc74e1004, type: 3}
-  - {fileID: 21300000, guid: 12bc2338e19e6024bbd9ab16ff0d2dc5, type: 3}
-  - {fileID: 21300000, guid: 90f26558ebb663e4a9a108637d5cc2a1, type: 3}
-  - {fileID: 21300000, guid: ed96189799307454fae3070afa85441e, type: 3}
-  Image: {fileID: 1174404038}
-  cheak_Clear: 0
 --- !u!114 &1174404037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,9 +1051,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1174404036}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 1613580762}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1074,7 +1113,6 @@ GameObject:
   - component: {fileID: 1425167004}
   - component: {fileID: 1425167003}
   - component: {fileID: 1425167002}
-  - component: {fileID: 1425167001}
   m_Layer: 5
   m_Name: "2\uBC88\uC790\uB9AC"
   m_TagString: Untagged
@@ -1102,26 +1140,6 @@ RectTransform:
   m_AnchoredPosition: {x: 250, y: 250}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1425167001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425166999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7640d359b5a71d54cbbe46127c6972a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: 2
-  Puzzle:
-  - {fileID: 21300000, guid: 69dfeadc5afe5bf41945882acbcd32ae, type: 3}
-  - {fileID: 21300000, guid: 1e7f72e15c8c68d439d3695cd7ed347c, type: 3}
-  - {fileID: 21300000, guid: 1fbdda76f181efe4ab40621619054455, type: 3}
-  - {fileID: 21300000, guid: 480f8cb67cd6c4b42a641ab2b334f095, type: 3}
-  Image: {fileID: 1425167003}
-  cheak_Clear: 0
 --- !u!114 &1425167002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,9 +1184,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1425167001}
-        m_TargetAssemblyTypeName: Puzzle_Manager, Assembly-CSharp
-        m_MethodName: PuzzleCheck
+      - m_Target: {fileID: 1613580762}
+        m_TargetAssemblyTypeName: Puzzle_Manager1, Assembly-CSharp
+        m_MethodName: Puzzle_Rotate_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1312,7 +1330,7 @@ GameObject:
   - component: {fileID: 1613580760}
   - component: {fileID: 1613580759}
   - component: {fileID: 1613580758}
-  - component: {fileID: 1613580757}
+  - component: {fileID: 1613580762}
   m_Layer: 5
   m_Name: Puzzle_Canvas
   m_TagString: Untagged
@@ -1320,19 +1338,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1613580757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613580756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9d9ec7b321c1704c83ae77cff33804f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearART: {fileID: 501214493}
 --- !u!114 &1613580758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,3 +1425,46 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1613580762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613580756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455380ebeaebb6d4f97655cf3f96d81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Puzzle_Order:
+  - Puzzle:
+    - {fileID: 21300000, guid: f25c69afc05ce3c419e7e11fc74e1004, type: 3}
+    - {fileID: 21300000, guid: 12bc2338e19e6024bbd9ab16ff0d2dc5, type: 3}
+    - {fileID: 21300000, guid: 90f26558ebb663e4a9a108637d5cc2a1, type: 3}
+    - {fileID: 21300000, guid: ed96189799307454fae3070afa85441e, type: 3}
+  - Puzzle:
+    - {fileID: 21300000, guid: 69dfeadc5afe5bf41945882acbcd32ae, type: 3}
+    - {fileID: 21300000, guid: 1e7f72e15c8c68d439d3695cd7ed347c, type: 3}
+    - {fileID: 21300000, guid: 1fbdda76f181efe4ab40621619054455, type: 3}
+    - {fileID: 21300000, guid: 480f8cb67cd6c4b42a641ab2b334f095, type: 3}
+  - Puzzle:
+    - {fileID: 21300000, guid: 3474fa172e2a71b47a296bdfc6a199db, type: 3}
+    - {fileID: 21300000, guid: ccb5d38bb1f1500489b58f30565aef51, type: 3}
+    - {fileID: 21300000, guid: e95b34c2944b9ae4aa78f9b138e0eeac, type: 3}
+    - {fileID: 21300000, guid: cfd2553ca0361d0489b69676f1c460c4, type: 3}
+  - Puzzle:
+    - {fileID: 21300000, guid: ab727ceecb3b2484fa83c818265136be, type: 3}
+    - {fileID: 21300000, guid: 06073720db230db4db8327c6747ad6b3, type: 3}
+    - {fileID: 21300000, guid: d3e65e60b1a4dec4c854d6dc423a0660, type: 3}
+    - {fileID: 21300000, guid: a386c474d7d5ffe4fbecc6d50d189bb3, type: 3}
+  Puzzle_Num: 01000000020000000300000000000000
+  Image:
+  - {fileID: 1174404038}
+  - {fileID: 1425167003}
+  - {fileID: 916977247}
+  - {fileID: 1011776499}
+  cheak_Clear: 00000000
+  clear: {fileID: 633072917}
+  clearART: {fileID: 501214493}
+  Clear_time: 1
