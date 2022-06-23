@@ -20,8 +20,12 @@ public class Sand_Manager : MonoBehaviour
 
     Vector2[] target_POS = new Vector2[5];
 
+    public GameObject clear;
+    public float Clear_time;
+
     void Start()
     {
+        clear.SetActive(false);
         Null_Num = Screen.height / 5.6f; //화면 비율이 비례해서 범위가 바뀌기 위해
         for (int i = 0; i < cheak.Length; i++)
         {
@@ -45,19 +49,6 @@ public class Sand_Manager : MonoBehaviour
             case 4: SandObjects[3].SetActive(true); target[2].SetActive(false); setSand[2].SetActive(true); break;
             case 5: SandObjects[4].SetActive(true); target[3].SetActive(false); setSand[3].SetActive(true); break;
         }
-
-       /* switch (cheak.Length)
-        {
-            case 1: if (cheak[0] == true) { Debug.Log("클리어"); } break;
-            case 2: if (cheak[0] == true && cheak[1] == true) { Debug.Log("클리어"); } break;
-            case 3: if (cheak[0] == true && cheak[1] == true && cheak[2] == true) { Debug.Log("클리어"); } break;
-            case 4: if (cheak[0] == true && cheak[1] == true && cheak[2] == true && cheak[3] == true) { Debug.Log("클리어"); } break;
-        }*/
-    }
-
-    public void clear()
-    {
-        Debug.Log("클리어");
     }
     public void Drag_Sand_0()
     {
@@ -113,14 +104,23 @@ public class Sand_Manager : MonoBehaviour
         {
             if (OBJ_Num <= Sand_Num)
             {
-                clear(); 
                 Destroy(SandObjects[i]);
                 target[i].SetActive(false); setSand[i].SetActive(true);
-                Sand_Num = 100; return;
+                Sand_Num = 100; clear_void(); return;
             }
             Sand_Num++;
             Destroy(SandObjects[i]);
         }
         SandObjects[i].transform.position = target_POS[i];
+    }
+    public void clear_void()
+    {
+        Debug.Log("클리어");
+        clear.SetActive(true);
+        Invoke("end_clear", Clear_time);
+    }
+    public void end_clear()
+    {
+        clear.SetActive(false);
     }
 }
