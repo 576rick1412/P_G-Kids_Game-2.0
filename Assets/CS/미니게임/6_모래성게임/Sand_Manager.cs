@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sand_Manager : MonoBehaviour
 {
+    // 원활한 사용을 위해 모래 / 체크 오브젝트의 레이케스트 타겟을 꺼놔야함
     public float Null_Num = 0; // 드롭 좌표 범위
 
     [Header("단어수")]
@@ -14,9 +15,8 @@ public class Sand_Manager : MonoBehaviour
 
     public GameObject[] SandObjects; //이동오브제
     public GameObject[] target; // 빈칸
-
     public GameObject[] setSand;
-    public int Sand_Num = 1; //성공한 알약수
+    public int Sand_Num = 1; //성공한 수
 
     Vector2[] target_POS = new Vector2[5];
 
@@ -30,7 +30,6 @@ public class Sand_Manager : MonoBehaviour
         for (int i = 0; i < cheak.Length; i++)
         {
             cheak[i] = false; setSand[i].SetActive(false);
-            setSand[i].SetActive(false);
             target_POS[i] = SandObjects[i].transform.position;
         }
 
