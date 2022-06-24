@@ -36,18 +36,19 @@ public class Sand_Manager : MonoBehaviour
         for (int j = 1; j < OBJ_Num; j++)
         {
             SandObjects[j].SetActive(false);
+            target[j].SetActive(false);
         }
     }
     void Update()
     {
         switch (Sand_Num)
-        {
-            case 1: SandObjects[0].SetActive(true);                                                         break;
-            case 2: SandObjects[1].SetActive(true); target[0].SetActive(false); setSand[0].SetActive(true); break;
-            case 3: SandObjects[2].SetActive(true); target[1].SetActive(false); setSand[1].SetActive(true); break;
-            case 4: SandObjects[3].SetActive(true); target[2].SetActive(false); setSand[2].SetActive(true); break;
-            case 5: SandObjects[4].SetActive(true); target[3].SetActive(false); setSand[3].SetActive(true); break;
-        }
+        {   
+            case 1: SandObjects[0].SetActive(true);     target[0].SetActive(true);                                                         break;
+            case 2: SandObjects[1].SetActive(true);     target[1].SetActive(true); target[0].SetActive(false); setSand[0].SetActive(true); break;
+            case 3: SandObjects[2].SetActive(true);     target[2].SetActive(true); target[1].SetActive(false); setSand[1].SetActive(true); break;
+            case 4: SandObjects[3].SetActive(true);     target[3].SetActive(true); target[2].SetActive(false); setSand[2].SetActive(true); break;
+            case 5: SandObjects[4].SetActive(true);     target[4].SetActive(true); target[3].SetActive(false); setSand[3].SetActive(true); break;
+        }                                                                        
     }
     public void Drag_Sand_0()
     {

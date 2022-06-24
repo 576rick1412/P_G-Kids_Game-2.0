@@ -575,7 +575,7 @@ PrefabInstance:
     - target: {fileID: 8456451345255927045, guid: 9853669ea3819724b866501b618e7add, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a0f238da68322d5418a7db14042ccd2b, type: 3}
+      objectReference: {fileID: 21300000, guid: e36499054858a6841ab953f9d7299df6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9853669ea3819724b866501b618e7add, type: 3}
 --- !u!1 &1160226023
@@ -676,7 +676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1160226025}
         m_TargetAssemblyTypeName: Hub_Button, Assembly-CSharp
-        m_MethodName: Animal_Stage_03
+        m_MethodName: Sand_Stage_03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -906,7 +906,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1808145463}
         m_TargetAssemblyTypeName: Hub_Button, Assembly-CSharp
-        m_MethodName: Animal_Stage_02
+        m_MethodName: Sand_Stage_02
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1052,7 +1052,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2034127099}
         m_TargetAssemblyTypeName: Hub_Button, Assembly-CSharp
-        m_MethodName: Animal_Stage_01
+        m_MethodName: Sand_Stage_01
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

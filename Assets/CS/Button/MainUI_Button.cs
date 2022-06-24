@@ -29,6 +29,11 @@ public class MainUI_Button : MonoBehaviour
         SceneManager.LoadScene("AppleGame_Hub");
     }
 
+    public void SandGame_Scene()
+    {
+        SceneManager.LoadScene("SandGame_Hub");
+    }
+
     public void Main_Scene()
     {
         SceneManager.LoadScene("Main_Scene");

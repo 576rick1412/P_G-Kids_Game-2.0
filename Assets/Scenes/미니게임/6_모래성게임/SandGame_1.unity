@@ -154,7 +154,7 @@ RectTransform:
   - {fileID: 1295559614}
   - {fileID: 991664925}
   m_Father: {fileID: 1397645921}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -521,7 +521,7 @@ RectTransform:
   - {fileID: 1631787490}
   - {fileID: 946180276}
   m_Father: {fileID: 1397645921}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -957,6 +957,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2776054799945203616, guid: cd96575783a8dc6479574ecd5e62247c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SandGame_Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776054799945203616, guid: cd96575783a8dc6479574ecd5e62247c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainUI_Button, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776054799945203616, guid: cd96575783a8dc6479574ecd5e62247c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2776054799945203628, guid: cd96575783a8dc6479574ecd5e62247c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1319,9 +1331,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 22137318}
   - {fileID: 754826800}
   - {fileID: 1998888049}
+  - {fileID: 22137318}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1566,7 +1578,7 @@ RectTransform:
   - {fileID: 495531580}
   - {fileID: 998867465}
   m_Father: {fileID: 1397645921}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
