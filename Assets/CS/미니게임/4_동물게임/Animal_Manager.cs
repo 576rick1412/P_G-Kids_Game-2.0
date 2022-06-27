@@ -84,7 +84,8 @@ public class Animal_Manager : MonoBehaviour
     }
     public void Drag_Animal(int i)
     {
-        GameObject[i].transform.position = Input.mousePosition;
+        Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        GameObject[i].transform.position = curPos;
         cheak[i] = false;
         switch (Null_cheak_Num[i])
         {
@@ -101,6 +102,7 @@ public class Animal_Manager : MonoBehaviour
         // return 0;으로 할 경우 빈칸[0]과 겹치는 경우가 생겨 100으로 반환
         for (int j = 0; j < target.Length; j++)
         {
+            Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float Distance = Vector3.Distance(GameObject[i].transform.position, target[OBJ_order[j]].transform.position);
             if (Distance < Null_Num)
             {
