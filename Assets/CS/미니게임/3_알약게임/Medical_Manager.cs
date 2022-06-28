@@ -93,7 +93,9 @@ public class Medical_Manager : MonoBehaviour
     }
     public void Drag_Medical(int i)
     {
-        Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float CurPos_X = Input.mousePosition.x;
+        float CurPos_Y = Input.mousePosition.y;
+        Vector2 curPos = new Vector2(CurPos_X, CurPos_Y);
         Medical[i].transform.position = curPos;
     }
 
