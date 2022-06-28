@@ -17,7 +17,7 @@ public class Medical_Manager : MonoBehaviour
 
     void Start()
     {
-        Null_Num = Screen.height / 10f;
+        Null_Num = 1f;
 
         for (int i = 0; i < Medical.Length; i++)
         {
@@ -93,10 +93,10 @@ public class Medical_Manager : MonoBehaviour
     }
     public void Drag_Medical(int i)
     {
-        float CurPos_X = Input.mousePosition.x;
-        float CurPos_Y = Input.mousePosition.y;
-        Vector2 curPos = new Vector2(CurPos_X, CurPos_Y);
-        Medical[i].transform.position = curPos;
+        var screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
+        Medical[i].transform.position = Camera.main.ScreenToWorldPoint(screenPoint);            // ÁÂÇ¥ º¯È¯
+        //Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Medical[i].transform.position = Input.mousePosition;
     }
 
     public void Drop_Medical(int i)
@@ -108,6 +108,6 @@ public class Medical_Manager : MonoBehaviour
             if (Distance0 < Null_Num)
             { Destroy(Medical[i]); Medical_Num++; return; } 
         }
-        Medical[i].transform.position = Medicalpos[i];
+        Medical[i].transform.position = new Vector3(Medicalpos[i].x, Medicalpos[i].y, 100f);
     }
 }

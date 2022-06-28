@@ -9,6 +9,7 @@ public class Bread_Manager : MonoBehaviour
     private void Update()
     {
         Mouse_Pos = Input.mousePosition;
+
         Bread_Cheak oc = GameObject.Find("GameCanvas").GetComponent <Bread_Cheak>();
         float Distance = Vector3.Distance(Mouse_Pos, this.gameObject.transform.position);
         if (Distance < 50)

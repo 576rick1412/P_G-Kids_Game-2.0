@@ -24,7 +24,7 @@ public class Animal_Manager : MonoBehaviour
     void Start()
     {
         clear.SetActive(false);
-        Null_Num = Screen.height / 5.6f; //화면 비율이 비례해서 범위가 바뀌기 위해
+        Null_Num = 1.7f; //화면 비율이 비례해서 범위가 바뀌기 위해
         for (int i = 0; i < OBJ_Num; i++)       { target_POS[i] = GameObject[i].transform.position; }
         for (int i = 0; i < cheak.Length; i++)  { cheak[i] = false; }
     }
@@ -84,8 +84,8 @@ public class Animal_Manager : MonoBehaviour
     }
     public void Drag_Animal(int i)
     {
-        Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        GameObject[i].transform.position = curPos;
+        var screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
+        GameObject[i].transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
         cheak[i] = false;
         switch (Null_cheak_Num[i])
         {
@@ -115,7 +115,7 @@ public class Animal_Manager : MonoBehaviour
                     { GameObject[i].transform.position = target[OBJ_order[j]].transform.position;                       Null_cheak[j] = true;                return j; }
                 }
             }
-        }GameObject[i].transform.position = target_POS[i]; return 100;
+        }GameObject[i].transform.position = new Vector3(target_POS[i].x, target_POS[i].y, 100f); return 100;
     }
 
     public void clear_void()
