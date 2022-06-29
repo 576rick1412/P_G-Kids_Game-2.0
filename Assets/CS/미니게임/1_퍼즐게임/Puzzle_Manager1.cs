@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 [HideInInspector]
@@ -24,6 +25,7 @@ public class Puzzle_Manager1 : MonoBehaviour
     public GameObject clear;
     public GameObject clearART;
     public float Clear_time;
+    public bool clearIN = false;
     void Start()
     {
         clearART.SetActive(false);
@@ -33,6 +35,13 @@ public class Puzzle_Manager1 : MonoBehaviour
         {
             Image[i].sprite = Puzzle_Order[i].Puzzle[Puzzle_Num[i]];
             if (Puzzle_Num[i] == 0) cheak_Clear[i] = true;
+        }
+    }
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && clearIN == true)
+        {
+            SceneManager.LoadScene("Main_Scene");
         }
     }
 
@@ -63,6 +72,7 @@ public class Puzzle_Manager1 : MonoBehaviour
     {
         if (cheak_Clear[0] == true && cheak_Clear[1] == true && cheak_Clear[2] == true && cheak_Clear[3] == true)
         {
+            clearIN = true;
             clearART.SetActive(true);   clear.SetActive(true);
             Debug.Log("Å¬¸®¾î");
             Invoke("Clear_Timer", Clear_time);

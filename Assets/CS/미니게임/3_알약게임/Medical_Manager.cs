@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Medical_Manager : MonoBehaviour
 {
     private float Null_Num = 0; // µå·Ó ÁÂÇ¥ ¹üÀ§
@@ -94,9 +93,7 @@ public class Medical_Manager : MonoBehaviour
     public void Drag_Medical(int i)
     {
         var screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
-        Medical[i].transform.position = Camera.main.ScreenToWorldPoint(screenPoint);            // ÁÂÇ¥ º¯È¯
-        //Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //Medical[i].transform.position = Input.mousePosition;
+        Medical[i].transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
     }
 
     public void Drop_Medical(int i)

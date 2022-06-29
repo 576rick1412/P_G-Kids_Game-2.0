@@ -76,4 +76,16 @@ public class Hub_Button : MonoBehaviour
     {
         SceneManager.LoadScene("SandGame_3");
     }
+    public void Bread_Stage_01()
+    {
+        SceneManager.LoadScene("BreadGame_1");
+    }
+    public void Bread_Stage_02()
+    {
+        SceneManager.LoadScene("BreadGame_2");
+    }
+    public void Bread_Stage_03()
+    {
+        SceneManager.LoadScene("BreadGame_3");
+    }
 }

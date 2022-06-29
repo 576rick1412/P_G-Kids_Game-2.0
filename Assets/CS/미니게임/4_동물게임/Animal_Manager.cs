@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Animal_Manager : MonoBehaviour
 {
     private float Null_Num = 0; // 드롭 좌표 범위
@@ -21,12 +21,22 @@ public class Animal_Manager : MonoBehaviour
 
     public GameObject clear;
     public float Clear_time;
+    public bool clearIN = false;
     void Start()
     {
         clear.SetActive(false);
         Null_Num = 1.7f; //화면 비율이 비례해서 범위가 바뀌기 위해
         for (int i = 0; i < OBJ_Num; i++)       { target_POS[i] = GameObject[i].transform.position; }
         for (int i = 0; i < cheak.Length; i++)  { cheak[i] = false; }
+    }
+    
+    void Update()
+    {
+        if(Input.GetMouseButtonDown(0) && clearIN == true)
+        {
+            SceneManager.LoadScene("Main_Scene");
+        }
+
     }
 
     public void clear_cheak()
@@ -102,7 +112,6 @@ public class Animal_Manager : MonoBehaviour
         // return 0;으로 할 경우 빈칸[0]과 겹치는 경우가 생겨 100으로 반환
         for (int j = 0; j < target.Length; j++)
         {
-            Vector2 curPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float Distance = Vector3.Distance(GameObject[i].transform.position, target[OBJ_order[j]].transform.position);
             if (Distance < Null_Num)
             {
@@ -120,6 +129,7 @@ public class Animal_Manager : MonoBehaviour
 
     public void clear_void()
     {
+        clearIN = true;
         Debug.Log("클리어");
         clear.SetActive(true);
         Invoke("end_clear", Clear_time);

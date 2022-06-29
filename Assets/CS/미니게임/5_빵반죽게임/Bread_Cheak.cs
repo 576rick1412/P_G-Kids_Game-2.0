@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Bread_Cheak : MonoBehaviour
 {
     public int cheak_Num;
@@ -12,18 +12,25 @@ public class Bread_Cheak : MonoBehaviour
 
     public GameObject clear;
     public float Clear_time;
-
+    public bool clearIN = false;
     void Start()
     {
         Bread.SetActive(false);
         cheak_Num = 0;
         clear.SetActive(false);
     }
-
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && clearIN == true)
+        {
+            SceneManager.LoadScene("Main_Scene");
+        }
+    }
     public void Clear_void()
     {
         if (cheak_Num >= target)
         {
+            clearIN = true;
             Bread.SetActive(true);
             This_OBJ.SetActive(false);
             Debug.Log("Å¬¸®¾î");

@@ -7,13 +7,16 @@ public class MainUI_Button : MonoBehaviour
 {
     public void Hub_Scene()
     {
-        SceneManager.LoadScene("Main_Scene");
+        SceneManager.LoadScene("Main_Scene"); 
     }
     public void PuzzleGame_Scene()
     {
         SceneManager.LoadScene("PuzzleGame_Hub");
     }
-
+    public void BreadGame_Scene()
+    {
+        SceneManager.LoadScene("BreadGame_Hub");
+    }
     public void MedicGame_Scene()
     {
         SceneManager.LoadScene("MedicGame_Hub");
@@ -42,10 +45,6 @@ public class MainUI_Button : MonoBehaviour
     {
         SceneManager.LoadScene("Title_Scene");
     }
-    public void Setting()
-    {
-        Debug.Log("세팅 눌림");
-    }
     public void goQuit()
     {
 #if UNITY_EDITOR
@@ -53,9 +52,5 @@ public class MainUI_Button : MonoBehaviour
 #else
         Application.Quit();
 #endif
-    }
-    public void MedicQues_1()
-    {
-        Debug.Log("물음표11");
     }
 }

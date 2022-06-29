@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class Bread_Manager : MonoBehaviour
 {
-    private Vector2 Mouse_Pos;
-
-    private void Update()
+    public GameObject THE_Object;
+    public bool mouseIN = false;
+    void Update()
     {
-        Mouse_Pos = Input.mousePosition;
 
+        InMouse();
         Bread_Cheak oc = GameObject.Find("GameCanvas").GetComponent <Bread_Cheak>();
-        float Distance = Vector3.Distance(Mouse_Pos, this.gameObject.transform.position);
-        if (Distance < 50)
+
+        if(mouseIN == true)
         {
-            oc.cheak_Num++;
-            oc.Clear_void();
-            Destroy(gameObject);
+            Vector3 screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
+            THE_Object.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
+
+            float Distance = Vector3.Distance(THE_Object.transform.position, gameObject.transform.position);
+
+            if (Distance < 0.5f)
+            {
+                oc.cheak_Num++;
+                oc.Clear_void();
+                Destroy(gameObject);
+            }
         }
+    }
+
+    public void InMouse()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            mouseIN = true;
+        }
+        else mouseIN = false;
+        return;
     }
 }

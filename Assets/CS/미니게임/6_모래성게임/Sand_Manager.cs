@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Sand_Manager : MonoBehaviour
 {
     // 원활한 사용을 위해 모래 / 체크 오브젝트의 레이케스트 타겟을 꺼놔야함
@@ -22,11 +22,12 @@ public class Sand_Manager : MonoBehaviour
 
     public GameObject clear;
     public float Clear_time;
+    public bool clearIN = false;
 
     void Start()
     {
         clear.SetActive(false);
-        Null_Num = Screen.height / 5.6f; //화면 비율이 비례해서 범위가 바뀌기 위해
+        Null_Num = 1;
         for (int i = 0; i < cheak.Length; i++)
         {
             cheak[i] = false; setSand[i].SetActive(false);
@@ -41,6 +42,11 @@ public class Sand_Manager : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetMouseButtonDown(0) && clearIN == true)
+        {
+            SceneManager.LoadScene("Main_Scene");
+        }
+
         switch (Sand_Num)
         {   
             case 1: SandObjects[0].SetActive(true);     target[0].SetActive(true);                                                         break;
@@ -94,7 +100,8 @@ public class Sand_Manager : MonoBehaviour
     }
     public void Drag_Sand(int i)
     {
-        SandObjects[i].transform.position = Input.mousePosition;
+        var screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
+        SandObjects[i].transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
     }
     public void Drop_Sand(int i)
     {
@@ -115,6 +122,7 @@ public class Sand_Manager : MonoBehaviour
     }
     public void clear_void()
     {
+        clearIN = true;
         Debug.Log("클리어");
         clear.SetActive(true);
         Invoke("end_clear", Clear_time);
