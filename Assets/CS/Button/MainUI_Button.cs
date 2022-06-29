@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainUI_Button : MonoBehaviour
 {
     public void Hub_Scene()
-    {
-        SceneManager.LoadScene("Main_Scene"); 
+    { 
+        SceneManager.LoadScene("Main_Scene");
     }
     public void PuzzleGame_Scene()
     {
@@ -52,5 +52,15 @@ public class MainUI_Button : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    public void Sound_USE()
+    {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
+        sound.Button();
+    }
+    IEnumerator WaitForIt()
+    {
+        yield return new WaitForSeconds(0.4f);
     }
 }
