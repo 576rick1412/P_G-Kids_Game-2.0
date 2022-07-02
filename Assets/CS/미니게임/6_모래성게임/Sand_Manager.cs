@@ -125,10 +125,16 @@ public class Sand_Manager : MonoBehaviour
         clearIN = true;
         Debug.Log("클리어");
         clear.SetActive(true);
+        Sound_Clear();
         Invoke("end_clear", Clear_time);
     }
     public void end_clear()
     {
         clear.SetActive(false);
+    }
+    public void Sound_Clear()
+    {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
+        sound.Clear();
     }
 }

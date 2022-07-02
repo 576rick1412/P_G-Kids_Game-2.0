@@ -21,6 +21,7 @@ public class MainUI_Setting : MonoBehaviour
         {
             on_off = true;
             UI_Window.SetActive(true);
+            Sound_USE();
             Debug.Log("Ã¢ ÄÑÁü");
             return;
         }
@@ -28,9 +29,14 @@ public class MainUI_Setting : MonoBehaviour
         {
             on_off = false;
             UI_Window.SetActive(false);
+            Sound_USE();
             Debug.Log("Ã¢ ²¨Áü");
             return;
         }
     }
-
+    public void Sound_USE()
+    {
+        SoundBox sound = GameObject.Find("¼Ò¸®´ã´ç±è¼Òµå").GetComponent<SoundBox>();
+        sound.Button();
+    }
 }

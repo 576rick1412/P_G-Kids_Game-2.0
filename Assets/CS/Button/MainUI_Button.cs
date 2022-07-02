@@ -6,43 +6,52 @@ using UnityEngine.SceneManagement;
 public class MainUI_Button : MonoBehaviour
 {
     public void Hub_Scene()
-    { 
+    {
+        Sound_USE();
         SceneManager.LoadScene("Main_Scene");
     }
     public void PuzzleGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("PuzzleGame_Hub");
     }
     public void BreadGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("BreadGame_Hub");
     }
     public void MedicGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("MedicGame_Hub");
     }
 
     public void AniamlGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("AnimalGame_Hub");
     }
 
     public void AppleGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("AppleGame_Hub");
     }
 
     public void SandGame_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("SandGame_Hub");
     }
 
     public void Main_Scene()
     {
+        Sound_USE();
         SceneManager.LoadScene("Main_Scene");
     }
     public void goHome()
     {
+        Sound_USE();
         SceneManager.LoadScene("Title_Scene");
     }
     public void goQuit()
@@ -58,9 +67,5 @@ public class MainUI_Button : MonoBehaviour
     {
         SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         sound.Button();
-    }
-    IEnumerator WaitForIt()
-    {
-        yield return new WaitForSeconds(0.4f);
     }
 }

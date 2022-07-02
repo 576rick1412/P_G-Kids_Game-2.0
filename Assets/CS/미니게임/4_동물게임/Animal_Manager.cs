@@ -26,13 +26,13 @@ public class Animal_Manager : MonoBehaviour
     {
         clear.SetActive(false);
         Null_Num = 1.7f; //화면 비율이 비례해서 범위가 바뀌기 위해
-        for (int i = 0; i < OBJ_Num; i++)       { target_POS[i] = GameObject[i].transform.position; }
-        for (int i = 0; i < cheak.Length; i++)  { cheak[i] = false; }
+        for (int i = 0; i < OBJ_Num; i++) { target_POS[i] = GameObject[i].transform.position; }
+        for (int i = 0; i < cheak.Length; i++) { cheak[i] = false; }
     }
-    
+
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && clearIN == true)
+        if (Input.GetMouseButtonDown(0) && clearIN == true)
         {
             SceneManager.LoadScene("Main_Scene");
         }
@@ -43,16 +43,16 @@ public class Animal_Manager : MonoBehaviour
     {
         switch (cheak.Length)
         {
-            case 1: if (cheak[0] == true)                                                               { clear_void(); } break;
-            case 2: if (cheak[0] == true && cheak[1] == true)                                           { clear_void(); } break;
-            case 3: if (cheak[0] == true && cheak[1] == true && cheak[2] == true)                       { clear_void(); } break;
-            case 4: if (cheak[0] == true && cheak[1] == true && cheak[2] == true && cheak[3] == true)   { clear_void(); } break;
+            case 1: if (cheak[0] == true) { clear_void(); } break;
+            case 2: if (cheak[0] == true && cheak[1] == true) { clear_void(); } break;
+            case 3: if (cheak[0] == true && cheak[1] == true && cheak[2] == true) { clear_void(); } break;
+            case 4: if (cheak[0] == true && cheak[1] == true && cheak[2] == true && cheak[3] == true) { clear_void(); } break;
         }
     }
 
     public void Drag_Animal_0()
     {
-       Drag_Animal(0);
+        Drag_Animal(0);
     }
     public void Drag_Animal_1()
     {
@@ -119,12 +119,14 @@ public class Animal_Manager : MonoBehaviour
                 else
                 {
                     if (i == j) // 올바른 칸일 경우 
-                    { GameObject[i].transform.position = target[OBJ_order[i]].transform.position;   cheak[i] = true;    Null_cheak[j] = true; clear_cheak(); return j; }
+                    { GameObject[i].transform.position = target[OBJ_order[i]].transform.position; cheak[i] = true;
+                        Null_cheak[j] = true; clear_cheak(); return j; }
                     else //칸은 맞으나 올바른 칸이 아닐경우
-                    { GameObject[i].transform.position = target[OBJ_order[j]].transform.position;                       Null_cheak[j] = true;                return j; }
+                    { GameObject[i].transform.position = target[OBJ_order[j]].transform.position; Null_cheak[j] = true; return j; }
                 }
             }
-        }GameObject[i].transform.position = new Vector3(target_POS[i].x, target_POS[i].y, 100f); return 100;
+        }
+        GameObject[i].transform.position = new Vector3(target_POS[i].x, target_POS[i].y, 100f); return 100;
     }
 
     public void clear_void()
@@ -134,8 +136,8 @@ public class Animal_Manager : MonoBehaviour
         clear.SetActive(true);
         Invoke("end_clear", Clear_time);
     }
-    public void end_clear()
+    public void Sound_Clear()
     {
-        clear.SetActive(false);
+
     }
 }

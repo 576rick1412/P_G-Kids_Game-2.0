@@ -74,12 +74,18 @@ public class Puzzle_Manager1 : MonoBehaviour
         {
             clearIN = true;
             clearART.SetActive(true);   clear.SetActive(true);
-            Debug.Log("클리어");
+            Debug.Log("클리어"); Sound_Clear();
             Invoke("Clear_Timer", Clear_time);
         }
     }
     public void Clear_Timer()
     {
         clear.SetActive(false);
+    }
+
+    public void Sound_Clear()
+    {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
+        sound.Clear();
     }
 }
