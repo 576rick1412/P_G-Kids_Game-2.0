@@ -106,6 +106,7 @@ public class Sand_Manager : MonoBehaviour
     public void Drop_Sand(int i)
     {
         // 이동오브제(GameObject)와 빈칸좌표(target)의 OBJ_order[n]번째와의 거리가 Null_Num보다 작다면 true 멀다면 false
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         float Distance = Vector3.Distance(SandObjects[i].transform.position, target[i].transform.position);
         if (Distance < Null_Num)
         {
@@ -113,12 +114,12 @@ public class Sand_Manager : MonoBehaviour
             {
                 Destroy(SandObjects[i]);
                 target[i].SetActive(false); setSand[i].SetActive(true);
-                Sand_Num = 100; clear_void(); return;
+                Sand_Num = 100; sound.Right(); clear_void(); return;
             }
-            Sand_Num++;
-            Destroy(SandObjects[i]);
+            Sand_Num++; sound.Right();
+            Destroy(SandObjects[i]); return;
         }
-        SandObjects[i].transform.position = target_POS[i];
+        SandObjects[i].transform.position = target_POS[i]; sound.Wrong();
     }
     public void clear_void()
     {

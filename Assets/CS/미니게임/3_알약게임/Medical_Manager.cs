@@ -98,13 +98,15 @@ public class Medical_Manager : MonoBehaviour
 
     public void Drop_Medical(int i)
     {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         for (int j = 0; j < 5; j++)
         {
             // 알약(Medical)과 약접시좌표(Medical_Black)의 거리가 Null_Num보다 작다면 true 멀다면 false
             float Distance0 = Vector3.Distance(Medical[i].transform.position, Medical_positon[j].transform.position);
             if (Distance0 < Null_Num)
-            { Destroy(Medical[i]); Medical_Num++; return; } 
+            { Destroy(Medical[i]); Medical_Num++; sound.Right(); return; } 
         }
         Medical[i].transform.position = new Vector3(Medicalpos[i].x, Medicalpos[i].y, 100f);
+        sound.Wrong();
     }
 }

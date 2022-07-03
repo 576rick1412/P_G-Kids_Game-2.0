@@ -11,8 +11,9 @@ public class Bread_Manager : MonoBehaviour
 
         InMouse();
         Bread_Cheak oc = GameObject.Find("GameCanvas").GetComponent <Bread_Cheak>();
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
 
-        if(mouseIN == true)
+        if (mouseIN == true)
         {
             Vector3 screenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100.0f);
             THE_Object.transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
@@ -22,6 +23,7 @@ public class Bread_Manager : MonoBehaviour
             if (Distance < 0.5f)
             {
                 oc.cheak_Num++;
+                sound.Right();
                 oc.Clear_void();
                 Destroy(gameObject);
             }

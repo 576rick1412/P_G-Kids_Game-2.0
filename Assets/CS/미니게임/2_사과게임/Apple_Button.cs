@@ -25,6 +25,8 @@ public class Apple_Button : MonoBehaviour
     }
     public void False_B()
     {
+        SoundBox sound = GameObject.Find("¼Ò¸®´ã´ç±è¼Òµå").GetComponent<SoundBox>();
+        sound.Wrong();
         Debug.Log("»ßºò!! ¿À´ä");
     }
 

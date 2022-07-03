@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundBox : MonoBehaviour
 {
+    //   SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
     AudioSource audioSource;
     public AudioClip clear;
     public AudioClip right;
@@ -13,7 +14,6 @@ public class SoundBox : MonoBehaviour
     {
         audioSource = gameObject.GetComponent<AudioSource>();
     }
-
     public void Clear()
     {
         audioSource.clip = clear;
