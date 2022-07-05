@@ -5,7 +5,6 @@ using UnityEngine;
 public class MainUI_Setting : MonoBehaviour
 {
     public GameObject credit;
-
     public GameObject UI_Window; // ¼³Á¤Ã¢
     public bool on_off = false;
     void Start()
