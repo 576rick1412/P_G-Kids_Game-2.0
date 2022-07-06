@@ -7,7 +7,9 @@ public class MainUI_Button : MonoBehaviour
 {
     public void Hub_Scene()
     {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         Sound_USE();
+        sound.Title = false;
         SceneManager.LoadScene("Main_Scene");
     }
     public void PuzzleGame_Scene()
@@ -46,12 +48,16 @@ public class MainUI_Button : MonoBehaviour
 
     public void Main_Scene()
     {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         Sound_USE();
+        sound.Title = false;
         SceneManager.LoadScene("Main_Scene");
     }
     public void goHome()
     {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
         Sound_USE();
+        sound.Title = true;
         SceneManager.LoadScene("Title_Scene");
     }
     public void goQuit()

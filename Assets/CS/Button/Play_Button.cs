@@ -23,6 +23,8 @@ public class Play_Button : MonoBehaviour
     }
     private void late_b()
     {
+        SoundBox sound = GameObject.Find("소리담당김소드").GetComponent<SoundBox>();
+        sound.Title = false;
         SceneManager.LoadScene("Main_Scene");
     }
     public void Sound_USE()
