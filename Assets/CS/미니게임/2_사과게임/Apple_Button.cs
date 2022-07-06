@@ -4,24 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Apple_Button : MonoBehaviour
 {
-    public bool clearIN = false;
-    public GameObject clear;
-    public float Clear_time;
-    private void Start()
-    {
-        clear.SetActive(false);
-    }
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && clearIN == true)
-        {
-            SceneManager.LoadScene("Main_Scene");
-        }
-    }
+
     public void Right_B()
     {
+        SoundBox sound = GameObject.Find("¼Ò¸®´ã´ç±è¼Òµå").GetComponent<SoundBox>();
+        Apple_Manager oc = GameObject.Find("SCP-079").GetComponent<Apple_Manager>();
         Debug.Log("»ßºò!! Á¤´ä");
-        clear_void();
+        sound.Right();
+        oc.InClear++;
+        oc.Creat_Canvas();
+        oc.clear_void();
+        gameObject.SetActive(false);
     }
     public void False_B()
     {
@@ -30,20 +23,4 @@ public class Apple_Button : MonoBehaviour
         Debug.Log("»ßºò!! ¿À´ä");
     }
 
-    public void clear_void()
-    {
-        clearIN = true;
-        clear.SetActive(true);
-        Debug.Log("Å¬¸®¾î"); Sound_Clear();
-        Invoke("Clear_Timer", Clear_time);
-    }
-    public void Clear_Timer()
-    {
-        clear.SetActive(false);
-    }
-    public void Sound_Clear()
-    {
-        SoundBox sound = GameObject.Find("¼Ò¸®´ã´ç±è¼Òµå").GetComponent<SoundBox>();
-        sound.Clear();
-    }
 }
